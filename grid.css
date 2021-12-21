@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #D2691E;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgb(0, 255, 255);
+  text-align: Center;
+  padding: 30px 0;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid </h1>
+
+<p>six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Prograd</div>
+  <div class="item2">Ritish</div>
+  <div class="item3">VIT</div>  
+  <div class="item4">Bhopal</div>
+  <div class="item5">HTML</div>
+</div>
+
+</body>
+</html>
+
+
